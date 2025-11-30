@@ -1,0 +1,107 @@
+<style>
+  body {
+    background-color: #f3fef6;
+    font-family: "Inter", sans-serif;
+  }
+
+  .user-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .profile-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.08);
+    border-left: 6px solid #16a34a;
+  }
+
+  .profile-card h4 {
+    font-weight: 700;
+    color: #14532d;
+  }
+
+  .profile-info p {
+    margin: 4px 0;
+    color: #374151;
+  }
+
+  .balance-box {
+    margin-top: 1rem;
+    background: #ecfdf5;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.3rem;
+  }
+
+  .btn-action {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+    color: white;
+    font-size: 0.95rem;
+  }
+
+  .btn-topup {
+    background-color: #16a34a;
+  }
+  .btn-topup:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+  }
+
+  .btn-transaction {
+    background-color: #22c55e;
+  }
+  .btn-transaction:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+  }
+
+  .transactions h5 {
+    font-weight: 700;
+    color: #14532d;
+  }
+
+  thead.table-light {
+    background-color: #ecfdf5 !important;
+    color: #065f46 !important;
+  }
+
+  tbody tr:hover {
+    background-color: #f0fdf4;
+  }
+
+  .modal-content {
+    border-radius: 14px;
+    border-top: 6px solid #16a34a;
+  }
+
+  .btn-primary {
+    background-color: #16a34a !important;
+    border: none !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #15803d !important;
+  }
+
+  #liveToast {
+    background-color: #16a34a !important;
+  }
+</style>

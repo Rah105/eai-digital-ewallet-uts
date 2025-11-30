@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+
+  user-service:
+    build: ./User-service
+    container_name: user-service
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./User-service/.env
+    volumes:
+      - ./User-service:/app
+    command: python app.py
+
+  transaction-service:
+    build: ./transaktion-service
+    container_name: transaction-service
+    ports:
+      - "3002:3002"
+    env_file:
+      - ./transaktion-service/.env
+    volumes:
+      - ./transaktion-service:/app
+    command: python app.py
+
+  notification-service:
+    build: ./notification-service
+    container_name: notification-service
+    ports:
+      - "3003:3003"
+    env_file:
+      - ./notification-service/.env
+    volumes:
+      - ./notification-service:/app
+    command: python app.py

@@ -1,0 +1,49 @@
+/* Card Container */
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+  padding: 3rem;
+}
+
+/* Title */
+.auth-card h4 {
+  text-align: center;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+}
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+/* Text Links */
+.text-muted a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+.text-muted a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,87 @@
+.user-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 4rem;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 650px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.balance-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.balance-box span {
+  color: #fcd34d;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+}
+.btn-action {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.btn-topup { background-color: #3b82f6; }
+.btn-topup:hover { background-color: #1d4ed8; }
+.btn-report { background-color: #10b981; }
+.btn-report:hover { background-color: #059669; }
+.btn-transaction { background-color: #f59e0b; }
+.btn-transaction:hover { background-color: #d97706; }
+
+.transactions {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+thead { background-color: #f3f4f6; color: #1e293b; }
+th, td {
+  padding: 0.9rem 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+tbody tr:hover { background-color: #f9fafb; }
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1060;
+}

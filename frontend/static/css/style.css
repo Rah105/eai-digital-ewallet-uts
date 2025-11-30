@@ -1,0 +1,72 @@
+/* Reset & base style */
+* {
+  box-sizing: border-box;
+}
+
+/* General Body */
+body {
+  background-color: #f3f4f6;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111827 !important;
+  padding: 0.75rem 1rem;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.nav-link {
+  color: #e5e7eb !important;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #93c5fd !important;
+}
+
+/* Main Layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+/* Flash Messages */
+.flash-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1rem;
+  z-index: 1050;
+}
+.alert {
+  border-radius: 10px;
+  animation: fadeInDown 0.5s ease;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}

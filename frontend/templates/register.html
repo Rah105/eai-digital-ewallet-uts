@@ -1,0 +1,97 @@
+{% extends 'auth_layout.html' %}
+{% block content %}
+<style>
+  body {
+    background: #0f172a; /* gelap elegan biar konsisten */
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 3rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+    border-top: 5px solid #10b981; /* hijau emerald */
+  }
+
+  .auth-card h4 {
+    text-align: center;
+    font-weight: 800;
+    color: #065f46;  /* hijau gelap */
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .form-control {
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+  }
+
+  .form-control:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 0.15rem rgba(16, 185, 129, 0.3);
+  }
+
+  .btn-primary {
+    background-color: #10b981;   /* hijau */
+    border: none;
+    border-radius: 12px;
+    padding: 0.9rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: 0.25s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #059669;   /* hijau gelap */
+  }
+
+  .text-muted {
+    color: #6b7280 !important;
+  }
+
+  .text-muted a {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .text-muted a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="auth-card">
+    <h4>Create Account</h4>
+
+    <form method="POST">
+      <div class="mb-3">
+        <label class="fw-semibold">Full Name</label>
+        <input type="text" name="full_name" class="form-control" placeholder="Your full name" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="fw-semibold">Email</label>
+        <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="fw-semibold">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Enter a strong password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+
+    <p class="text-center text-muted mt-4">
+      Already have an account?
+      <a href="{{ url_for('login') }}">Login</a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
